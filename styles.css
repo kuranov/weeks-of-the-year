@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-family: 'Libre Baskerville';
+}
+
+h1 {
+    margin-bottom: 2vh;
+}
+
+#weeks-container {
+    display: grid;
+    grid-template-columns: repeat(13, minmax(0, 1fr));
+    column-gap: 1vw;
+    row-gap: 1.75vw;
+}
+
+#weeks-container > div {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    aspect-ratio: 1 / 1;
+}
+
+#weeks-container .break {
+    flex-basis: 100%;
+    height: 0;
+    border: none;
+}
+
+.week-number {
+    font-family: 'Proza Libre';
+    font-weight: 600;
+    color: #333;
+    font-size: 2vw;
+}
+
+.week-date {
+    font-size: 12px;
+}
